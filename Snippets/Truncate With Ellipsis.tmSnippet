@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* 
+Truncate with Ellipsis by Mike Rumble.
+http://rumble.github.com/examples/text-overflow.html
+*/
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -moz-binding: url('/xml/ellipsis.xml#ellipsis');
+}</string>
+	<key>name</key>
+	<string>Truncate With Ellipsis</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>truncate</string>
+	<key>uuid</key>
+	<string>16EF448F-B105-463B-94D4-F68DA35BAEA7</string>
+</dict>
+</plist>

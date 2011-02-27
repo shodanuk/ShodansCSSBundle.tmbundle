@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* 
+Equal height modules CSS by Mike Rumble.
+http://rumble.github.com/examples/equal-height-modules
+*/
+
+.modules {
+  clear: both;
+  margin-bottom: 1em;
+  overflow: hidden;
+  position: relative;
+  zoom: 1;
+}
+
+.module {
+  float: left;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  width: ${1:200}px;
+}</string>
+	<key>name</key>
+	<string>Equal height modules</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>eq:height</string>
+	<key>uuid</key>
+	<string>5D7FC095-50CE-443B-B435-042DCF927323</string>
+</dict>
+</plist>

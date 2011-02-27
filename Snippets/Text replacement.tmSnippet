@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.replacement {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999em;
+}
+</string>
+	<key>name</key>
+	<string>Text replacement</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>replace</string>
+	<key>uuid</key>
+	<string>38C34720-9517-411B-8237-4E452FFEE664</string>
+</dict>
+</plist>

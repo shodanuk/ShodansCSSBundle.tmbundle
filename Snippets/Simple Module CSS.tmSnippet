@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.module {
+  position: relative;
+}
+
+.module-fg {
+  position: relative;
+  z-index: 20;
+}
+
+.module-bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.module-bg-hd,
+.module-bg-ft {
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.module-bg-hd {
+  height: 10px;
+  top: 0;
+}
+
+.module-bg-ft {
+  bottom: 0;
+  height: 10px;
+}
+
+/* IE6 compatibility nastiness */
+
+* html .module {
+  zoom: 1;
+}
+
+* html .module-bg {
+  height: expression(this.parentNode.clientHeight+'px');
+}
+</string>
+	<key>name</key>
+	<string>Simple Module CSS</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>sim:mod</string>
+	<key>uuid</key>
+	<string>4D748F83-8D62-45E6-B902-3C6EDA0AF4DB</string>
+</dict>
+</plist>

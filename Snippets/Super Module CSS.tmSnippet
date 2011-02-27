@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* 
+Super Module pattern by Mike Rumble.
+http://rumble.github.com/examples/overlay.html
+*/
+.module {
+  position: relative;
+}
+
+.module-fg {
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.module-fg .module-hd,
+.module-fg .module-ft {
+  overflow: hidden;
+}
+
+.module-bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  /* The following rule hits IE 6 only */
+  _height: expression(this.parentNode.clientHeight+'px');
+}
+
+.module-bg .module-hd div,
+.module-bg .module-bd div,
+.module-bg .module-ft div {
+  font-size: 0;
+  overflow: hidden;
+}
+
+.module-bg .module-hd {
+  left: 0;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.module-bg .module-hd .module-hd-l {
+  background: transparent url(hd-l.png) no-repeat 0 0;
+  float: left;
+  height: 20px;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-right: -3px;
+}
+
+.module-bg .module-hd .module-hd-r {
+  background: transparent url(hd-r.png) no-repeat 0 0;
+  float: right;
+  height: 20px;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-left: -3px;
+}
+
+.module-bg .module-hd .module-hd-c div {
+  background: transparent url(hd-c.png) repeat-x 0 0;
+  height: 20px;
+}
+
+.module-bg .module-ft {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.module-bg .module-ft .module-ft-l {
+  background: transparent url(ft-l.png) no-repeat 0 0;
+  float: left;
+  height: 20px;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-right: -3px;
+}
+
+.module-bg .module-ft .module-ft-r {
+  background: transparent url(ft-r.png) no-repeat 0 0;
+  float: right;
+  height: 20px;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-left: -3px;
+}
+
+.module-bg .module-ft .module-ft-c div {
+  background: transparent url(ft-c.png) repeat-x 0 0;
+  height: 20px;
+}
+
+.module-bg .module-bd {
+  bottom: 20px; /* Bottom should be height of .module-ft */
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 20px; /* Top should be height of .module-hd */
+  width: 100%;
+}
+
+.module-bg .module-bd .module-bd-l {
+  background: transparent url(bd-l.png) repeat-y 0 0;
+  float: left;
+  height: 100%;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-right: -3px;
+}
+
+.module-bg .module-bd .module-bd-r {
+  background: transparent url(bd-r.png) repeat-y 0 0;
+  float: right;
+  height: 100%;
+  width: 20px;
+  /* The following rule hits IE 6 only */
+  _margin-left: -3px;
+}
+
+.module-bg .module-bd .module-bd-c{
+  height: 100%;
+}
+
+.module-bg .module-bd .module-bd-c div {
+  background: #fff url(bd-c.png) repeat-x 0 100%;
+  height: 100%;
+}
+
+.module-bg  .module-bd {
+  /* The following rule hits IE 6 only */
+  _height: expression(Math.floor(this.parentNode.clientHeight-(this.nextSibling ? this.nextSibling.clientHeight : 0)-(this.previousSibling ? this.previousSibling.clientHeight : 0))+'px');
+  overflow: hidden;
+}
+
+.module-bg .module-bd .module-bd-l,
+.module-bg .module-bd .module-bd-r,
+.module-bg .module-bd .module-bd-c div {
+  /* The following rule hits IE 6 and IE 7 only */
+  *height: 10000px;
+}</string>
+	<key>name</key>
+	<string>Super Module CSS</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>sup:mod</string>
+	<key>uuid</key>
+	<string>CEDA7590-3239-437A-A59A-944D18B07FFF</string>
+</dict>
+</plist>
