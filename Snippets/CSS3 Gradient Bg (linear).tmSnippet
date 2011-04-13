@@ -4,19 +4,27 @@
 <dict>
 	<key>content</key>
 	<string>background-color: #${1:ffffff};
+background-image:         linear-gradient( top, 
+                                           #$1, 
+                                           #$3); 
 background-image:    -moz-linear-gradient( center top,
                                            #$1 ${2:0}%,
-                                           #${3:000000} ${4:100}%);
+                                           #${3:000000} ${4:100}% );
+background-image:     -ms-linear-gradient( top,
+                                           #$1,
+                                           #$3 );
+background-image:      -o-linear-gradient( top,
+                                           #$1,
+                                           #$3 );
 background-image:        -webkit-gradient( linear,
                                            left top,
                                            left bottom,
                                            color-stop($2%, #$1),
-                                           color-stop($4%, #$3));
+                                           color-stop($4%, #$3) );
 background-image: -webkit-linear-gradient( #$1, 
-                                           #$3);                                 
-background-image:         linear-gradient( top, 
-                                           #$1, 
-                                           #$3); 
+                                           #$3 );
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#$1', EndColorStr='#$3');                              
+
 </string>
 	<key>name</key>
 	<string>CSS3 Gradient Bg (linear)</string>
