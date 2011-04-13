@@ -12,7 +12,7 @@ $0
 	<key>name</key>
 	<string>CSSEdit Group</string>
 	<key>scope</key>
-	<string>source.css</string>
+	<string>source.css, source.sass</string>
 	<key>tabTrigger</key>
 	<string>group</string>
 	<key>uuid</key>
